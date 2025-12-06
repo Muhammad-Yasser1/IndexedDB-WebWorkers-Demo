@@ -1,0 +1,64 @@
+body {
+	max-width: 500px;
+	margin: auto;
+	padding: 20px;
+	background: var(--bg);
+	color: var(--text);
+	font-family: Arial;
+}
+
+:root {
+	--bg: #fff;
+	--text: #000;
+}
+.dark {
+	--bg: #222;
+	--text: #fff;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#settings-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.modal-content {
+	background: var(--bg);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+ul#todo-list {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	background: var(--bg);
+	padding: 10px;
+	border: 1px solid #888;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	cursor: pointer;
+}

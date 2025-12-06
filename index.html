@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Todo App</h1>
+      <button id="open-settings">⚙️</button>
+    </header>
+
+    <main>
+      <div class="add-todo">
+        <input id="todo-input" placeholder="Add a todo..." />
+        <button id="add-btn">Add</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </main>
+
+    <div id="settings-modal" class="hidden">
+      <div class="modal-content">
+        <h2>Settings</h2>
+
+        <label>
+          <input type="checkbox" id="dark-mode-toggle">
+          Dark Mode
+        </label>
+
+        <label>
+          Sort order:
+          <select id="sort-order">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </label>
+
+        <button id="close-settings">Close</button>
+      </div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

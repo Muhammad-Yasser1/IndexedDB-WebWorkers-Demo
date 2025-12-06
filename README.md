@@ -1,1 +1,1 @@
-"# IndexedDB-WebWorkers-Demo" 
+# IndexedDB-WebWorkers-Demo
